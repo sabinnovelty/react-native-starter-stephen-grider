@@ -1,0 +1,34 @@
+Layout Systems
+
+1.Box Object Modal
+  It is used to position the single element. It contains with three layer 
+   i.padding , boarder , margin
+
+2. Flex Box
+1.Parent View
+    - alignItems:stretch = it stretch the child element as far as possible.It takes full horizontal space in the screen.
+    -alignItems:flex-start= it condense down to the left as far as possible.But still takes enough width to show the space.
+    -alignItems:flex-end  = it condensse down to the right side.
+    -alignItems:flex-start = it aling child elements in the center of the screen
+
+    Note:
+    -alignItems property depends upon the flexDirection properties 
+     if flexDirection is column  = alignItems with be stretch and for flexDirection row alignItems will be stertch
+     -flexDirection = row ; justifyContent aligns horizontally ; flexDirection = column ; justifyContent aligns vertically
+
+2. The properties that is always assing to the Parent View
+ - alignItems
+ -justifyContent
+ -flexDirection
+
+  3. The properties that is goint to assing to child view are:
+    - flex
+    -alignSelf
+
+Note: In parent view if we use flexDirection = row and in child view if we use flex:1  , the child view takes horizontal space as much as it can.
+        if flexDirection = cloumn flex = 1 will take vertical space.
+
+3.Position = absoulte properties to the chidl ignores completely to their sibblings .
+4.TO fill the child completely with the parent space : css for filling child completely with Parent space.
+    - apply in child view: position:absolute , top:0 , right:0 buttom:0 , left:0 
+    -alternative for abouve css = ...StyleSheet.absoluteFillObject
